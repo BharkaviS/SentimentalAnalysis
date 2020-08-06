@@ -24,9 +24,11 @@ access_secret="euvLKIkjRWVzMc8sfUjZNTP9HEb29SwjC8en5X2MLs3f8"
 
 # In[3]:
 
-
+#creating OAuth object
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+#setting the access token
 auth.set_access_token(access_key, access_secret)
+#creating an API Object for tweepy
 api = tweepy.API(auth)
 
 
