@@ -100,7 +100,7 @@ def getData():
         except StopIteration:
             break
         #Plotting
-    axes = plt.gca()
+    axes = plt.gca() # get current axes.
     axes.set_ylim([-1, 2])
 
     plt.scatter(numbers_list,polarity_list)
@@ -120,11 +120,11 @@ def getData():
 submit = Button(root, text ="Submit", command = getData)
 
 label1.pack()
-E1.pack()
+E1.pack() # arranging
 label2.pack()
 E2.pack()
 submit.pack(side =BOTTOM)
-root.mainloop()
+root.mainloop() #used to run the application in infinite loop until user closes the window.
 plt.show()
 
 
