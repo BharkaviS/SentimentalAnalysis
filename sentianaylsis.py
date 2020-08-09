@@ -43,7 +43,7 @@ root = Tk()
 
 
 label1 = Label(root, text="Search")
-E1 = Entry(root, bd =5)
+E1 = Entry(root, bd =5) #To get single line string input.
 
 label2 = Label(root, text="Sample Size")
 E2 = Entry(root, bd =5)
